@@ -1,0 +1,10 @@
+schema: schema.ts
+generates:
+  ./resolvers-types-valid.ts:
+    config:
+      mappers:
+        User: ./models#UserModel
+        Profile: ./models#UserProfile
+    plugins:
+      - typescript
+      - typescript-resolvers
